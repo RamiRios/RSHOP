@@ -1,0 +1,157 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h1{
+    line-height: 1.3em;
+    font-size: 2rem;
+}
+
+
+p{
+    margin-bottom: 1.6em;
+}
+
+.container{
+    display: flex;
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.header{
+    background: #333;
+    color: white;
+    padding: .6em 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+   letter-spacing: 15px;
+   font-size: 1.2em; 
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 100px;
+}
+
+.navigation ul li a input{
+width: 240px;
+height: 30px;
+padding: 0 20px;
+font-size: 18px;
+color: #333;
+outline: none;
+border: 1px solid silver;
+border-radius: 15px;
+}
+
+.logo-img{
+    width: 15%;
+    height: 15%;
+}
+
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
+
+.main{
+    align-items: center;
+    padding-top: 9rem;
+}
+
+.main img{
+    padding: 10px 50px;
+    width: 160px;
+    height: 160px;
+}
+
+.producto:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 2);
+    transition: all 0.4s linear;
+}
+
+.nom-producto{
+    padding: 30px;
+    font-size: large;
+}
+
+.precio{
+    padding: 30px;
+}
+
+.main a{
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.footer{
+    background: #333;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    padding: 2em 0;
+    margin-top: 6rem;
+}
+
+@media only screen and (max-width: 767px){
+
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+ 
+    .navigation ul li{
+        display: block;
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    
+    .navigation ul li a:hover{
+        background: #4a4a4a;
+    }
+    
+}
